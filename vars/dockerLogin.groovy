@@ -1,7 +1,6 @@
 #!/usr/bin/env groovy
+import slu.madrid.jenkins.Docker
 
-import com.example.Docker
-
-def call(String imageName) {
-    return new Docker(this).dockerPush(imageName)
+def call() {
+    return new Docker(this).dockerLogin()
 }
