@@ -19,6 +19,6 @@ class Docker implements Serializable {
   }
 
   def dockerPush(String imageName){
-    script.sh "docker push $imageName  localhost:5000"
+    script.sh "docker push $imageName"
   }
 }
